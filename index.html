@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Weather-app</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+      <title>Weather-app</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-    <main>
-      <div>
-        <h1>Pretoria</h1>
-        <p>
-          Friday 12:23, cloudy
-          <br />
-          Humidity: 69%, Wind: 24km/h
-        </p>
+    <body>
+      <div class="weather-app">
+        <header>
+          <form class="search-form" id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              id="search-form-input"
+              class="search-form-input"
+            />
+            <input type="submit" value="Search" class="search-form-button" />
+          </form>
+        </header>
+        <main>
+          <div class="weather-app-data">
+            <div>
+              <h1 class="weather-app-city" id="city">Paris</h1>
+              <p class="weather-app-details">
+                Tuesday 14:49, scattered clouds
+                <br />
+                Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              </p>
+            </div>
+            <div class="weather-app-temperature-container">
+              <div class="weather-app-icon">🌤️</div>
+              <div class="weather-app-temperature">12</div>
+              <div class="weatehr-app-unit">°C</div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          This project was coded by
+          <a href="https://github.com/Keabetswe688" target="_blank">
+            Keabetswe Bokaba
+          </a>
+          is open-sourced on
+          <a href="https://github.com/Keabetswe688/homework7" target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://sage-griffin-562ed5.netlify.app" target="_blank"
+            >Netlify</a
+          >
+        </footer>
       </div>
-      <div>☁ 11°C</div>
-    </main>
-
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Keabetswe688" target="_blank">
-        Keabetswe Bokaba
-      </a>
-      is open-sourced on
-      <a href="https://github.com/Keabetswe688/homework7" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://cool-banoffee-2ff28c.netlify.app" target="_blank"
-        >Netlify</a
-      >
-    </footer>
-  </body>
+      <script src="index.js"></script>
+    </body>
+  </html>
 </html>
