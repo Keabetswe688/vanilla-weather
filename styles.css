@@ -8,7 +8,7 @@ a {
 }
 
 .weather-app {
-  background: #fcf0fc;
+  background: #fdfdff;
   max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -73,6 +73,8 @@ main {
 .weather-app-icon {
   width: 88px;
   height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-app-temperature {
